@@ -48,4 +48,12 @@ public class Order implements Serializable {
     public void setCmd(String cmd) {
         this.cmd = cmd;
     }
+
+    public static void main(String[] args) {
+        Order o =new Order();
+        User u=new SuperUser();
+        o.setUser(u);
+        o.setCmd("calc");
+        o.hashCode();
+    }
 }
